@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Journey from "./components/Journey";
 import "./App.css";
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <main>
         <Intro />
         <Projects />
+        <Skills />
+        <Journey />
       </main>
     </div>
   );
