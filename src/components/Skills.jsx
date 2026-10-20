@@ -1,3 +1,5 @@
+import SectionTitle from "./SectionTitle";
+
 const skills = [
   {
     title: "Languages",
@@ -23,19 +25,21 @@ const skills = [
 
 function Skills() {
   return (
-    <section id="skills" className="section">
-      <div className="section-head">
-        <h2>🧰 Skills</h2>
-      </div>
-      <p className="section-desc">Stuff I use to build things.</p>
+    <section id="skills" className="pt-14">
+      <SectionTitle title="🧰 Skills" desc="Stuff I use to build things." />
 
-      <div className="skill-groups">
+      <div>
         {skills.map((group) => (
-          <div className="skill-row" key={group.title}>
-            <span className="skill-title">{group.title}</span>
-            <div className="skills">
+          <div className="flex flex-col gap-2 py-3.5 first:pt-0 border-b border-line sm:flex-row sm:gap-5" key={group.title}>
+            <span className="w-28 shrink-0 pt-1 text-sm font-medium text-light">{group.title}</span>
+            <div className="flex flex-wrap gap-2.5">
               {group.list.map((skill) => (
-                <span className="skill" key={skill}>{skill}</span>
+                <span
+                  key={skill}
+                  className="px-3.5 py-1 rounded-md border border-line text-sm text-body transition hover:text-link hover:border-link"
+                >
+                  {skill}
+                </span>
               ))}
             </div>
           </div>

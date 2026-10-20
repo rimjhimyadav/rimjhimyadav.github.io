@@ -5,11 +5,11 @@ import Skills from "./components/Skills";
 import Journey from "./components/Journey";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import "./App.css";
+import "./index.css";
 
 function App() {
   return (
-    <div className="page">
+    <div className="max-w-3xl mx-auto px-6">
       <Navbar />
       <main>
         <Intro />

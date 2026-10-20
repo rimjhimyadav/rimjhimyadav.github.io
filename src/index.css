@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* dark mode works with the "dark" class on body */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* my colors, use them like bg-page, text-muted, border-line */
+@theme {
+  --font-sans: "Geist", "Noto Sans JP", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+
+  --color-page: #ffffff;
+  --color-main: #171717;
+  --color-body: #404040;
+  --color-muted: #525252;
+  --color-light: #737373;
+  --color-line: #e5e5e5;
+  --color-link: #1d4ed8;
+}
+
+/* same colors for dark mode */
+.dark {
+  --color-page: #0a0a0a;
+  --color-main: #ededed;
+  --color-body: #d4d4d4;
+  --color-muted: #a3a3a3;
+  --color-light: #8a8a8a;
+  --color-line: #262626;
+  --color-link: #60a5fa;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-page text-main leading-relaxed transition-colors duration-300;
+  }
+
+  a {
+    @apply text-link hover:underline;
+  }
+
+  b {
+    @apply font-semibold text-main;
+  }
+
+  ::selection {
+    @apply bg-blue-500 text-white;
+  }
+}

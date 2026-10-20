@@ -1,6 +1,6 @@
 # My Portfolio
 
-My personal portfolio website made with React and Vite.
+My personal portfolio website made with React, Vite and Tailwind CSS.
 
 🔗 **Live:** https://rimjhimyadav.github.io
 
@@ -16,7 +16,7 @@ My personal portfolio website made with React and Vite.
 
 - React
 - Vite
-- CSS
+- Tailwind CSS
 - ESLint
 - GitHub Pages (deployed with GitHub Actions)
 
