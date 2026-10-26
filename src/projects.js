@@ -4,10 +4,10 @@ const projects = [
   {
     title: "Anime Finder",
     description:
-      "Search and browse anime with trending, top rated and upcoming lists. Click any anime to see details and trailer, and save it to My List.",
+      "Find anime with search, genre filters and infinite scroll. Each anime has a page with characters, trailer and recommendations. Also has a weekly airing schedule and My List.",
     image: "/images/anime-finder.jpg",
-    type: "JavaScript",
-    tags: ["HTML", "Bootstrap", "JavaScript", "GraphQL API"],
+    type: "React",
+    tags: ["React", "React Router", "Vite", "GraphQL API"],
     code: "https://github.com/rimjhimyadav/anime-finder",
     live: "https://rimjhimyadav.github.io/anime-finder/",
   },
