@@ -21,7 +21,7 @@ const projects = [
     type: "JavaScript",
     tags: ["HTML", "CSS", "JavaScript", "REST API"],
     code: "https://github.com/rimjhimyadav/country-explorer",
-    live: "https://rimjhimyadav.github.io/country-explorer/",
+    live: "",
   },
   {
     title: "Pokédex",
