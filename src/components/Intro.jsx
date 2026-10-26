@@ -1,9 +1,6 @@
 // put your photo in the public folder and write its name here, like "/me.jpg"
 const photo = "";
 
-const buttonClass =
-  "px-4 py-1.5 rounded-lg border border-line text-sm font-medium text-main hover:no-underline hover:text-link hover:border-link";
-
 function Intro() {
   return (
     <section className="flex flex-col-reverse gap-5 pt-12 sm:flex-row sm:items-start sm:gap-10">
@@ -34,11 +31,6 @@ function Intro() {
           Right now I'm looking for my first frontend role, where I can learn from a
           team and work on real products.
         </p>
-
-        <div className="flex gap-2.5 mt-6">
-          <a href="https://github.com/rimjhimyadav" target="_blank" className={buttonClass}>GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/rimjhimyadav/" target="_blank" className={buttonClass}>LinkedIn ↗</a>
-        </div>
       </div>
 
       {photo && (
