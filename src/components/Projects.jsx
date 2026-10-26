@@ -30,7 +30,7 @@ function Projects() {
 
   return (
     <section id="projects" className="pt-14">
-      <SectionTitle title="🛠️ Projects" desc="Things I built while learning.">
+      <SectionTitle title="🛠️ Projects" desc="Things I've built.">
         <a
           href="https://github.com/rimjhimyadav"
           target="_blank"

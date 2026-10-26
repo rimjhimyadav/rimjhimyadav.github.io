@@ -1,8 +1,10 @@
 // add new projects at the top of the list
 // type is used for the filter buttons: "React" or "JavaScript"
+// featured: true shows the project with a big image
 const projects = [
   {
     title: "Anime Finder",
+    featured: true,
     description:
       "Find anime with search, genre filters and infinite scroll. Each anime has a page with characters, trailer and recommendations. Also has a weekly airing schedule and My List.",
     image: "/images/anime-finder.jpg",
