@@ -3,15 +3,15 @@
 // featured: true shows the project with a big image
 const projects = [
   {
-    title: "Anime Finder",
+    title: "Reelmark",
     featured: true,
     description:
-      "Find anime with search, genre filters and infinite scroll. Each anime has a page with characters, trailer and recommendations. Also has a weekly airing schedule and My List.",
-    image: "/images/anime-finder.jpg",
+      "Track the movies, shows and anime you watch. Tick off episodes, see what's next and what's airing this week, and check your stats like total watch time and streaks. Everything is saved in the browser.",
+    image: "/images/reelmark.jpg",
     type: "React",
-    tags: ["React", "React Router", "Vite", "GraphQL API"],
-    code: "https://github.com/rimjhimyadav/anime-finder",
-    live: "https://rimjhimyadav.github.io/anime-finder/",
+    tags: ["React", "React Router", "Tailwind CSS", "Zustand", "TMDB API"],
+    code: "https://github.com/rimjhimyadav/reelmark",
+    live: "https://rimjhimyadav.github.io/reelmark/",
   },
   {
     title: "Country Explorer",

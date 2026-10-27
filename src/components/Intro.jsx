@@ -25,7 +25,7 @@ function Intro() {
         </p>
         <p className="mb-4">
           When I'm not coding, I'm probably watching anime 🍿. <b>Attack on Titan</b> and <b>Naruto</b> are
-          my all time favourites, and that's also why I built <a href="https://rimjhimyadav.github.io/anime-finder/" target="_blank">Anime Finder</a>.
+          my all time favourites, and that's also why I built <a href="https://rimjhimyadav.github.io/reelmark/" target="_blank">Reelmark</a> to keep track of everything I watch.
         </p>
         <p className="mb-4">
           Right now I'm looking for my first frontend role, where I can learn from a
