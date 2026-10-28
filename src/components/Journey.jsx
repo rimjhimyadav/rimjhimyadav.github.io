@@ -36,7 +36,7 @@ function Journey() {
       <div className="relative before:absolute before:left-[17px] before:top-2.5 before:bottom-2.5 before:w-0.5 before:bg-line">
         {journey.map((item) => (
           <div className="group relative flex gap-4.5 mb-6" key={item.title}>
-            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-full border border-line bg-page group-hover:border-blue-500">
+            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-full border border-line bg-surface transition group-hover:border-accent group-hover:bg-accent/10">
               {item.icon}
             </div>
             <div>

@@ -1,31 +1,29 @@
 @import "tailwindcss";
 
-/* dark mode works with the "dark" class on body */
-@custom-variant dark (&:where(.dark, .dark *));
-
-/* my colors, use them like bg-page, text-muted, border-line */
+/* my colors, use them like bg-page, text-muted, border-line, text-accent */
+/* accent is narutomaki pink 🍥, the grays are a bit warm (stone) */
 @theme {
   --font-sans: "Geist", "Noto Sans JP", sans-serif;
   --font-mono: "Geist Mono", monospace;
 
-  --color-page: #ffffff;
-  --color-main: #171717;
-  --color-body: #404040;
-  --color-muted: #525252;
-  --color-light: #737373;
-  --color-line: #e5e5e5;
-  --color-link: #1d4ed8;
-}
+  --color-page: #fdfcfb;
+  --color-surface: #f6f3f2;
+  --color-main: #1c1917;
+  --color-body: #44403c;
+  --color-muted: #57534e;
+  --color-light: #78716c;
+  --color-line: #e7e2e1;
+  --color-accent: #db2777;
 
-/* same colors for dark mode */
-.dark {
-  --color-page: #0a0a0a;
-  --color-main: #ededed;
-  --color-body: #d4d4d4;
-  --color-muted: #a3a3a3;
-  --color-light: #8a8a8a;
-  --color-line: #262626;
-  --color-link: #60a5fa;
+  /* intro fades in once when the page loads */
+  --animate-intro: intro 0.7s ease-out both;
+
+  @keyframes intro {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
 }
 
 @layer base {
@@ -33,12 +31,23 @@
     scroll-behavior: smooth;
   }
 
+  /* outline when using the keyboard */
+  :focus-visible {
+    @apply outline-2 outline-offset-4 outline-accent rounded-sm;
+  }
+
+  /* overflow-x-clip so the pink glow doesn't make the page scroll sideways */
   body {
-    @apply bg-page text-main leading-relaxed transition-colors duration-300;
+    @apply bg-page text-main leading-relaxed overflow-x-clip;
   }
 
   a {
-    @apply text-link hover:underline;
+    @apply text-accent hover:underline;
+  }
+
+  /* links inside text look like normal text with a pink underline */
+  p a {
+    @apply text-main underline decoration-accent/50 decoration-2 underline-offset-4 transition-colors hover:text-accent hover:decoration-accent;
   }
 
   b {
@@ -46,6 +55,6 @@
   }
 
   ::selection {
-    @apply bg-blue-500 text-white;
+    @apply bg-accent text-page;
   }
 }

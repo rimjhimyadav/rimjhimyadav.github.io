@@ -3,29 +3,16 @@ import projects from "../projects";
 import ProjectCard from "./ProjectCard";
 import SectionTitle from "./SectionTitle";
 
-// only show a filter if at least one project has that type
-const filters = ["All", "React", "JavaScript"].filter(
-  (f) => f === "All" || projects.some((p) => p.type === f)
-);
+const featured = projects.filter((p) => p.featured);
+const others = projects.filter((p) => !p.featured);
 
 function Projects() {
-  const [filter, setFilter] = useState("All");
   const [showAll, setShowAll] = useState(false);
 
-  let list = projects;
-  if (filter !== "All") {
-    list = projects.filter((p) => p.type === filter);
-  }
-
-  // show 5 projects first, rest after clicking show more
-  let visible = list;
+  // show 4 small projects first, rest after clicking show more
+  let visible = others;
   if (!showAll) {
-    visible = list.slice(0, 5);
-  }
-
-  function changeFilter(f) {
-    setFilter(f);
-    setShowAll(false);
+    visible = others.slice(0, 4);
   }
 
   return (
@@ -34,43 +21,29 @@ function Projects() {
         <a
           href="https://github.com/rimjhimyadav"
           target="_blank"
-          className="text-sm font-medium text-main hover:text-link hover:no-underline"
+          className="text-sm font-medium text-main hover:text-accent hover:no-underline"
         >
           GitHub ›
         </a>
       </SectionTitle>
 
-      {filters.length > 2 && (
-        <div className="flex gap-2 mb-6">
-          {filters.map((f) => (
-            <button
-              key={f}
-              className={
-                "px-4 py-1 rounded-full border text-sm cursor-pointer " +
-                (filter === f
-                  ? "bg-main border-main text-page"
-                  : "border-line text-muted hover:text-main")
-              }
-              onClick={() => changeFilter(f)}
-            >
-              {f}
-            </button>
-          ))}
-        </div>
-      )}
+      {featured.map((project) => (
+        <ProjectCard key={project.title} project={project} />
+      ))}
 
-      <div>
+      {/* small projects in 2 columns on bigger screens */}
+      <div className="grid gap-x-6 gap-y-10 mt-8 sm:grid-cols-2">
         {visible.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
       </div>
 
-      {list.length > 5 && (
+      {others.length > 4 && (
         <button
-          className="block mx-auto mt-5 px-4.5 py-2 rounded-lg border border-line text-sm text-muted cursor-pointer hover:text-link hover:border-link"
+          className="block mx-auto mt-8 px-4.5 py-2 rounded-lg border border-line text-sm text-muted cursor-pointer hover:text-accent hover:border-accent"
           onClick={() => setShowAll(!showAll)}
         >
-          {showAll ? "Show less ↑" : "Show all " + list.length + " projects ↓"}
+          {showAll ? "Show less ↑" : "Show all " + others.length + " projects ↓"}
         </button>
       )}
     </section>

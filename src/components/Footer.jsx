@@ -1,16 +1,16 @@
 const year = new Date().getFullYear();
 
-const linkClass = "text-light hover:text-link";
+const linkClass = "text-light hover:text-accent";
 
 function Footer() {
   return (
     <footer className="flex flex-col items-start gap-3 mt-20 pt-6 pb-10 border-t border-line text-sm text-light sm:flex-row sm:items-center sm:justify-between">
       <div>
         <p>
-          <span className="font-medium text-link">ありがとう</span> (arigatou) for stopping by! 🍥
+          <span className="font-medium text-accent">ありがとう</span> (arigatou) for stopping by! 🍥
         </p>
         <p className="mt-0.5 text-xs">
-          © {year} Rimjhim Yadav - <a href="https://github.com/rimjhimyadav/rimjhimyadav.github.io" target="_blank" className="text-light underline hover:text-link">Made with React</a>
+          © {year} Rimjhim Yadav - <a href="https://github.com/rimjhimyadav/rimjhimyadav.github.io" target="_blank" className="text-light underline hover:text-accent">Made with React</a>
         </p>
       </div>
 

@@ -1,26 +1,25 @@
 import SectionTitle from "./SectionTitle";
 
+// the main skills are the ones my projects actually use
 const skills = [
   {
     title: "Languages",
-    list: ["JavaScript", "TypeScript", "HTML", "CSS"],
+    list: ["JavaScript", "HTML", "CSS"],
   },
   {
-    title: "Frameworks",
-    list: ["React", "Next.js", "Redux Toolkit", "React Query", "React Router"],
-  },
-  {
-    title: "Styling",
-    list: ["Tailwind CSS", "Bootstrap", "Material UI", "Sass", "Responsive Design"],
-  },
-  {
-    title: "Backend",
-    list: ["Node.js", "Express", "MongoDB", "SQL", "REST APIs", "GraphQL"],
+    title: "Frontend",
+    list: ["React", "React Router", "Zustand", "Tailwind CSS", "Responsive Design"],
   },
   {
     title: "Tools",
-    list: ["Git", "GitHub", "Vite", "Jest", "Figma", "Vercel"],
+    list: ["Git", "GitHub", "Vite", "REST APIs"],
   },
+];
+
+// things I've learned or used a bit, shown smaller
+const alsoWorkedWith = [
+  "TypeScript", "Next.js", "Redux Toolkit", "React Query", "Bootstrap", "Material UI",
+  "Sass", "Node.js", "Express", "MongoDB", "SQL", "GraphQL", "Jest", "Figma", "Vercel",
 ];
 
 function Skills() {
@@ -36,7 +35,7 @@ function Skills() {
               {group.list.map((skill) => (
                 <span
                   key={skill}
-                  className="px-3.5 py-1 rounded-md border border-line text-sm text-body transition hover:text-link hover:border-link"
+                  className="px-3.5 py-1 rounded-md border border-line bg-surface text-sm text-body"
                 >
                   {skill}
                 </span>
@@ -44,6 +43,11 @@ function Skills() {
             </div>
           </div>
         ))}
+
+        <div className="flex flex-col gap-1 pt-3.5 sm:flex-row sm:gap-5">
+          <span className="w-28 shrink-0 text-sm font-medium text-light">Also worked with</span>
+          <p className="text-sm text-muted">{alsoWorkedWith.join(", ")}</p>
+        </div>
       </div>
     </section>
   );

@@ -19,11 +19,12 @@ function Contact() {
         desc="Have a job, an internship or just want to talk? Email is the best way to reach me."
       />
 
-      <div className="inline-flex flex-wrap items-center gap-3.5 py-2 pr-2.5 pl-4 rounded-lg border border-line">
+      <div className="inline-flex flex-wrap items-center gap-3.5 py-2 pr-2.5 pl-4 rounded-lg border border-line bg-surface">
         <a href={"mailto:" + email}>{email}</a>
         <button
           onClick={copyEmail}
           title="Copy email"
+          aria-label={copied ? "Email copied" : "Copy email"}
           className={
             "flex items-center p-1 text-sm cursor-pointer " +
             (copied ? "text-green-500" : "text-light hover:text-main")
@@ -40,10 +41,6 @@ function Contact() {
           )}
         </button>
       </div>
-
-      <p className="mt-4 text-sm text-muted">
-        You can also find me on <a href="https://www.linkedin.com/in/rimjhimyadav/" target="_blank">LinkedIn</a> and <a href="https://github.com/rimjhimyadav" target="_blank">GitHub</a>.
-      </p>
     </section>
   );
 }
