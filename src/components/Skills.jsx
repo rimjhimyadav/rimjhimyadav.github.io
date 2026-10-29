@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 const skills = [
   {
     title: "Languages",
-    list: ["JavaScript", "HTML", "CSS"],
+    list: ["JavaScript", "TypeScript", "HTML", "CSS"],
   },
   {
     title: "Frontend",
@@ -12,13 +12,13 @@ const skills = [
   },
   {
     title: "Tools",
-    list: ["Git", "GitHub", "Vite", "REST APIs"],
+    list: ["Git", "GitHub", "Vite", "Vitest", "REST APIs"],
   },
 ];
 
 // things I've learned or used a bit, shown smaller
 const alsoWorkedWith = [
-  "TypeScript", "Next.js", "Redux Toolkit", "React Query", "Bootstrap", "Material UI",
+  "Next.js", "Redux Toolkit", "React Query", "Bootstrap", "Material UI",
   "Sass", "Node.js", "Express", "MongoDB", "SQL", "GraphQL", "Jest", "Figma", "Vercel",
 ];
 

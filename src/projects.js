@@ -21,6 +21,20 @@ const projects = [
     live: "https://rimjhimyadav.github.io/reelmark/",
   },
   {
+    title: "Git Wanted",
+    featured: true,
+    description:
+      "Your year on GitHub as a GTA-inspired crime story. Type any username to get a wanted level from your longest streak, a weapon wheel of your languages, a criminal record and a Most Wanted poster you can download.",
+    image: "/images/gitwanted.jpg",
+    slides: [
+      { name: "Home", image: "/images/gitwanted/home.jpg" },
+      { name: "Profile", image: "/images/gitwanted/profile.jpg" },
+    ],
+    tags: ["React", "TypeScript", "Tailwind CSS", "Motion", "GitHub API", "Vitest"],
+    code: "https://github.com/rimjhimyadav/gitwanted",
+    live: "https://rimjhimyadav.github.io/gitwanted/",
+  },
+  {
     title: "Country Explorer",
     description:
       "Explore every country with search, region filter and sorting. Also has a flag and capital quiz with score, streak and best score.",

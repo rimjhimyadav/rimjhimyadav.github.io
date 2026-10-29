@@ -19,7 +19,7 @@ function Intro() {
 
         <p className="mb-4">
           I'm a frontend developer. I like building web apps that look simple and
-          are easy to use, mostly with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b> and <b>React</b>.
+          are easy to use, mostly with <b>JavaScript</b>, <b>TypeScript</b> and <b>React</b>.
         </p>
         <p className="mb-4">
           When I'm not coding, I'm probably watching anime 🍿. <b>Attack on Titan</b> and <b>Naruto</b> are
