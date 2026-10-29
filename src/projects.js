@@ -40,6 +40,23 @@ const projects = [
     live: "https://rimjhimyadav.github.io/gitwanted/",
   },
   {
+    title: "Clackr",
+    featured: true,
+    description:
+      "A typing test where you race a ghost of your best run. See your speed every second, a heatmap of the keys you miss, and practice tests made from your weakest keys. Has a code mode and mechanical keyboard sounds.",
+    image: "/images/clackr.jpg",
+    slides: [
+      { name: "Ghost race", image: "/images/clackr/test.jpg" },
+      { name: "Results", image: "/images/clackr/results.jpg" },
+      { name: "Code mode", image: "/images/clackr/code.jpg" },
+      { name: "History", image: "/images/clackr/history.jpg" },
+      { name: "Themes", image: "/images/clackr/themes.jpg" },
+    ],
+    tags: ["React", "TypeScript", "Tailwind CSS", "Zustand", "Web Audio API", "Vitest"],
+    code: "https://github.com/rimjhimyadav/clackr",
+    live: "https://rimjhimyadav.github.io/clackr/",
+  },
+  {
     title: "Country Explorer",
     description:
       "Explore every country with search, region filter and sorting. Also has a flag and capital quiz with score, streak and best score.",

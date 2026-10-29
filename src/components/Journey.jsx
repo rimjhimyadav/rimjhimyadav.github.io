@@ -16,7 +16,7 @@ const journey = [
   {
     year: "2026",
     title: "Built my portfolio projects",
-    text: "Reelmark, Git Wanted, Country Explorer and more",
+    text: "Reelmark, Git Wanted, Clackr and more",
     icon: "💻",
   },
   {
