@@ -28,6 +28,11 @@ const projects = [
     image: "/images/gitwanted.jpg",
     slides: [
       { name: "Home", image: "/images/gitwanted/home.jpg" },
+      { name: "Mission Passed", image: "/images/gitwanted/mission.jpg" },
+      { name: "Wanted Level", image: "/images/gitwanted/wanted.jpg" },
+      { name: "Weapon Wheel", image: "/images/gitwanted/weapon.jpg" },
+      { name: "Criminal Record", image: "/images/gitwanted/record.jpg" },
+      { name: "Most Wanted", image: "/images/gitwanted/poster.jpg" },
       { name: "Profile", image: "/images/gitwanted/profile.jpg" },
     ],
     tags: ["React", "TypeScript", "Tailwind CSS", "Motion", "GitHub API", "Vitest"],
