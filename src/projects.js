@@ -6,7 +6,7 @@ const projects = [
     title: "Reelmark",
     featured: true,
     description:
-      "Track the movies, shows and anime you watch. Tick off episodes, see what's next and what's airing this week, and check your stats like total watch time and streaks. Everything is saved in the browser.",
+      "Track the movies, shows and anime you watch. Tick off episodes, see what's next and the exact time new episodes air, and check your stats like total watch time and streaks. The page takes the colors of the movie you're looking at. Everything is saved in the browser.",
     image: "/images/reelmark.jpg",
     slides: [
       { name: "Home", image: "/images/reelmark/home.jpg" },
@@ -16,7 +16,7 @@ const projects = [
       { name: "Library", image: "/images/reelmark/library.jpg" },
       { name: "Stats", image: "/images/reelmark/stats.jpg" },
     ],
-    tags: ["React", "React Router", "Tailwind CSS", "Zustand", "TMDB API"],
+    tags: ["React", "React Router", "Tailwind CSS", "Zustand", "TMDB API", "TVmaze API"],
     code: "https://github.com/rimjhimyadav/reelmark",
     live: "https://rimjhimyadav.github.io/reelmark/",
   },
