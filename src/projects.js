@@ -16,7 +16,7 @@ const projects = [
       { name: "Library", image: "/images/reelmark/library.jpg" },
       { name: "Stats", image: "/images/reelmark/stats.jpg" },
     ],
-    tags: ["React", "React Router", "Tailwind CSS", "Zustand", "TMDB API", "TVmaze API"],
+    tags: ["React", "TypeScript", "React Router", "Tailwind CSS", "Zustand", "TMDB API", "TVmaze API"],
     code: "https://github.com/rimjhimyadav/reelmark",
     live: "https://rimjhimyadav.github.io/reelmark/",
   },
